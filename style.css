@@ -1,87 +1,87 @@
-body{
-      font-family: Arial;
-      background:#111;
-      color:white;
-      text-align:center;
-      margin:0;
-    }
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
 
-    header{
-      padding:20px;
-      font-size:35px;
-      background:#1d1d1d;
-    }
+header {
+  padding: 20px;
+  font-size: 35px;
+  background: #1d1d1d;
+}
 
-    .container{
-      display:grid;
-      grid-template-columns:repeat(2,250px);
-      gap:20px;
-      justify-content:center;
-      margin-top:50px;
-    }
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
 
-    .card{
-      background:#222;
-      padding:40px;
-      border-radius:20px;
-      cursor:pointer;
-      font-size:22px;
-      transition:0.2s;
-    }
+.card {
+  background: #222;
+  padding: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  transition: 0.2s;
+}
 
-    .card:hover{
-      transform:scale(1.05);
-      background:#333;
-    }
+.card:hover {
+  transform: scale(1.05);
+  background: #333;
+}
 
-    #quiz,
-    #addForm{
-      margin-top:40px;
-    }
+#quiz,
+#addForm {
+  margin-top: 40px;
+}
 
-    .option{
-      background:#222;
-      width:300px;
-      margin:15px auto;
-      padding:20px;
-      border-radius:15px;
-      cursor:pointer;
-      transition:0.2s;
-    }
+.option {
+  background: #222;
+  width: 300px;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
 
-    .option:hover{
-      background:#333;
-    }
+.option:hover {
+  background: #333;
+}
 
-    input,
-    select,
-    button{
-      padding:15px;
-      margin:10px;
-      border:none;
-      border-radius:10px;
-      font-size:18px;
-    }
+input,
+select,
+button {
+  padding: 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
 
-    button{
-      cursor:pointer;
-    }
+button {
+  cursor: pointer;
+}
 
-    #addBtn{
-      position:fixed;
-      right:20px;
-      bottom:20px;
-      background:lime;
-      font-weight:bold;
-    }
+#addBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: lime;
+  font-weight: bold;
+}
 
-    .back{
+/* .back{
       position:absolute;
       left:20px;
       top:100px;
-    }
+    } */
 
-    /* ===== АДАПТИВНІ СТИЛІ ===== */
+/* ===== АДАПТИВНІ СТИЛІ ===== */
 
 /* Планшети */
 @media (max-width: 900px) {
@@ -139,11 +139,11 @@ body{
     padding: 12px 18px;
     font-size: 16px;
   }
-
+  /* 
   .back {
     top: 80px;
     left: 10px;
-  }
+  } */
 }
 
 /* Дуже маленькі телефони */
