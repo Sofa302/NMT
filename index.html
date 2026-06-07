@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>НМТ Тренажер</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>📘 НМТ Тренажер</header>
+
+<!-- MENU -->
+<div class="container" id="menu">
+  <div class="card" onclick="openSubject('hist')">Історія України</div>
+  <div class="card" onclick="openSubject('math')">Математика</div>
+  <div class="card" onclick="openSubject('ukr')">Українська мова</div>
+  <div class="card" onclick="openSubject('eng')">Англійська мова</div>
+</div>
+
+<!-- QUIZ -->
+<div id="quiz" style="display:none;">
+  <button class="back" onclick="backToMenu()">⬅ Назад</button>
+
+  <h2 id="question"></h2>
+
+  <div id="options"></div>
+
+  <button onclick="nextQuestion()">Далі ➡</button>
+</div>
+
+<!-- ADD -->
+<div id="addForm" style="display:none;">
+  <button class="back" onclick="backToMenu()">⬅ Назад</button>
+
+  <h2>Додати питання</h2>
+
+  <select id="subject">
+    <option value="hist">Історія</option>
+    <option value="math">Математика</option>
+    <option value="ukr">Українська</option>
+    <option value="eng">Англійська</option>
+  </select>
+
+  <br>
+
+  <input id="qText" placeholder="Питання">
+
+  <br>
+
+  <input id="correct" placeholder="Правильна відповідь">
+
+  <br>
+
+  <select id="type">
+    <option value="t">Текст</option>
+    <option value="n">Число</option>
+  </select>
+
+  <br>
+
+  <button onclick="saveQuestion()">Додати</button>
+</div>
+
+<button id="addBtn" onclick="showAdd()">➕ Додати питання</button>
+
+<script src="app.js"></script>
+
+</body>
+</html>
