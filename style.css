@@ -80,3 +80,84 @@ body{
       left:20px;
       top:100px;
     }
+
+    /* ===== АДАПТИВНІ СТИЛІ ===== */
+
+/* Планшети */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+
+  .card {
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  .option {
+    width: 80%;
+  }
+}
+
+/* Телефони */
+@media (max-width: 600px) {
+  header {
+    font-size: 26px;
+    padding: 15px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+
+  .card {
+    padding: 25px;
+    font-size: 18px;
+    border-radius: 15px;
+  }
+
+  .option {
+    width: 90%;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  input,
+  select,
+  button {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  #addBtn {
+    right: 15px;
+    bottom: 15px;
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+  .back {
+    top: 80px;
+    left: 10px;
+  }
+}
+
+/* Дуже маленькі телефони */
+@media (max-width: 400px) {
+  .card {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .option {
+    font-size: 15px;
+  }
+
+  header {
+    font-size: 22px;
+  }
+}
